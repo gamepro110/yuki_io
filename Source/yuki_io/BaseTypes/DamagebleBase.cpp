@@ -12,6 +12,14 @@ void UDamagebleBase::BeginPlay() {
 	Super::BeginPlay();
 }
 
+const int& UDamagebleBase::GetHp() const {
+	return health;
+}
+
+const int& UDamagebleBase::GetMaxHp() const {
+	return maxHealth;
+}
+
 void UDamagebleBase::Heal(int value) {
 	health = (health + value < maxHealth) ? health + value : maxHealth;
 }

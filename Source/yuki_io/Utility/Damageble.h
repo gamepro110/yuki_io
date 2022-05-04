@@ -15,6 +15,8 @@ class YUKI_IO_API IDamageble {
 	GENERATED_BODY()
 
 public:
+	virtual const int& GetHp() const = 0;
+	virtual const int& GetMaxHp() const = 0;
 	virtual void Heal(int value) = 0;
 	virtual void TakeDamage(int value) = 0;
 	virtual void Die() = 0;

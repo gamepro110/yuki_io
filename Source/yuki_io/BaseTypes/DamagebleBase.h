@@ -28,6 +28,8 @@ protected:
 	virtual void BeginPlay() override;
 
 public:
+	virtual const int& GetHp() const override;
+	virtual const int& GetMaxHp() const override;
 	virtual void Heal(int value) override;
 	virtual void TakeDamage(int value) override;
 	virtual void Die() override;

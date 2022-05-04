@@ -10,6 +10,6 @@ void UDamageEffect::ActivateEffect(AActor* targetActor) {
 
 	if (dmgble) {
 		dmgble->TakeDamage(dmgAmount);
-		UE_LOG(LogTemp, Warning, TEXT("Healing player"));
+		UE_LOG(LogTemp, Warning, TEXT("dmg player"));
 	}
 }
